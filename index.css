@@ -1,0 +1,180 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #f8f9fa;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-img{
+    width: 100px;
+    border-radius: 10%;
+    margin-left: vw;
+}
+.banner{
+    width: 70%;
+    height: 20vh
+}
+.right-nav {
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+    margin-right: 1vw;
+    
+}
+.cart{
+    box-sizing: border-box;
+    padding-left:10px ;
+    background-color: #EEA200;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center; /* Align items horizontally in the center */
+    align-items: center; /* Align items vertically in the center */
+    flex-direction: row; /* Make items next to each other */
+}
+.cart:hover{
+    cursor: pointer;
+}
+.cart-font{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+}
+.cart-font:hover{
+    color: #ffffff;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 4vw;
+    font-weight: bold;
+}
+.sale-link:hover{
+    text-decoration: none;
+    color: #ffffff;
+}
+input[type="search"] {
+    width: 200px;
+    padding: 5px;
+}
+input[type="search"]:hover {
+    border: 2px solid #EEA200;
+}
+input[type="search"]:focus {
+    border: 2px solid #EEA200;
+    outline: none;
+}
+.main-content {
+    display: flex;
+}
+.categories {
+    flex: 0.7; /* This will take up the remaining space after the .products section */
+    padding-left: 20px;
+}
+.categories, .products {
+    margin: 20px 0;
+}
+.category-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: 0.4s;
+    padding: 0 10px;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #000000;
+}
+.category-name:hover{
+    background-color: #ffffff;
+    color: #EEA200;
+    padding: 12px 5px;
+}
+.category-card {
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 5px;
+    box-sizing: border-box; /* This ensures that the padding and border are included in the element's total width and height */
+}
+.products {
+    
+    display: flex;
+    flex: 3;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.product-card {
+    width: calc(20% - 20px);
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box; /* This ensures that the padding and border are included in the element's total width and height */
+    
+}
+
+.prodcut-info{
+    display: flex;
+    justify-content: space-between;
+
+}
+.product-price-cart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .add-to-cart {
+    background-color: #EEA200;
+    border: none;
+    color: white;
+    padding: 5px 10px;  
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+.product-image img {
+    width: 100%;
+    height: auto;
+}
+
+.product-name {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.product-price, .product-discounted-price {
+    margin: 0;
+    font-weight: 600;
+    ;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.pagination a {
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+}
+
+.pagination a.active {
+    background-color: #EEA200;
+    color: white;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}

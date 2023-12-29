@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sepetim</title>
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+<body>
+    <header>
+        <div class="my-nav">
+          <div class="logo">
+            <img class="logo-img" src="img/logo.png" alt="">
+            <div class="sale">
+              <a class="sale-link" href="#">Fırsatlar</a>
+            </div>
+          </div>
+          <div class="right-navi">
+            <input type="search" placeholder="Ara.." />
+            <div class="cart">
+              <span class="cart-font">Sepet</span>
+              <img src="/img/basket (1).png" alt="Cart" /> 
+          </div>
+        </nav>
+      </header>
+      <div class="main-content">
+        <div class="container-fluid mt-2">
+            <div class="row">
+                <aside class="col-lg-9">
+                    <div class="card">
+                        <div class="table-responsive">
+                            <table class="table table-borderless table-shopping-cart">
+                                <thead class="text-muted">
+                                    <tr class="small text-uppercase">
+                                        <th scope="col">Ürünler</th>
+                                        <th scope="col" width="120">Miktar</th>
+                                        <th scope="col" width="120">Fiyat</th>
+                                        <th scope="col" class="text-right d-none d-md-block" width="200"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <figure class="itemside align-items-center">
+                                                <div class="aside"><img src="/img/Karpuz.png" class="img-sm mr-2"></div>
+                                                <figcaption class="info"> <a href="#" class="title text-dark" data-abc="true">Karpuz kg</a>
+                                                </figcaption>
+                                            </figure>
+                                        </td>
+                                        <td> <select class="form-control">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                            </select> </td>
+                                        <td>
+                                            <div class="price-wrap"> <var class="price">₺10.00</var></div>
+                                        </td>
+                                        <td class="text-right d-none d-md-block"> <a data-original-title="Save to Wishlist" title="" href="" class="btn btn-light" data-toggle="tooltip" data-abc="true"> <i class="fa fa-heart"></i></a> <a href="" class="btn btn-site" data-abc="true"> Kaldır</a> </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <figure class="itemside align-items-center">
+                                                <div class="aside"><img src="/img/guseppe.png" class="img-sm mr-2"></div>
+                                                <figcaption class="info"> <a href="#" class="title text-dark" data-abc="true">Flower Formal T-shirt</a>
+                                                    <p class="text-muted small">SIZE: L <br> Brand: ADDA </p>
+                                                </figcaption>
+                                            </figure>
+                                        </td>
+                                        <td> <select class="form-control">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                            </select> </td>
+                                        <td>
+                                            <div class="price-wrap"> <var class="price">$15</var> <small class="text-muted"> $12 each </small> </div>
+                                        </td>
+                                        <td class="text-right d-none d-md-block"> <a data-original-title="Save to Wishlist" title="" href="" class="btn btn-light" data-toggle="tooltip" data-abc="true"> <i class="fa fa-heart"></i></a> <a href="" class="btn btn-site" data-abc="true"> Remove</a> </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <figure class="itemside align-items-center">
+                                                <div class="aside"><img src="/img/guseppe.png" class="img-sm mr-2"></div>
+                                                <figcaption class="info"> <a href="#" class="title text-dark" data-abc="true">Printed White Tshirt</a>
+                                                    <p class="small text-muted">SIZE:M <br> Brand: Cantabil</p>
+                                                </figcaption>
+                                            </figure>
+                                        </td>
+                                        <td> <select class="form-control">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                            </select> </td>
+                                        <td>
+                                            <div class="price-wrap"> <var class="price">$9</var> <small class="text-muted"> $6 each</small> </div>
+                                        </td>
+                                        <td class="text-right d-none d-md-block"> <a data-original-title="Save to Wishlist" title="" href="" class="btn btn-light" data-toggle="tooltip" data-abc="true"> <i class="fa fa-heart"></i></a> <a href="" class="btn btn-site" data-abc="true"> Remove</a> </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </aside>
+                <aside class="col-lg-3">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <form>
+                                <div class="form-group"> <label>Have coupon?</label>
+                                    <div class="input-group"> <input type="text" class="form-control coupon" name="" placeholder="Coupon code"> <span class="input-group-append"> <button class="btn btn-site">Apply</button> </span> </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <dl class="dlist-align">
+                                <dt>Total price:</dt>
+                                <dd class="text-right ml-3">₺69.97</dd>
+                            </dl>
+                            <dl class="dlist-align">
+                                <dt>Total:</dt>
+                                <dd class="text-right text-dark b ml-3"><strong>₺59.97</strong></dd>
+                            </dl>
+                            <hr> <a href="#" class="btn btn-site mt-2" data-abc="true"> Satın al </a> <a href="#" class="btn btn-site mt-2" data-abc="true">Alışverişe devam et</a>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

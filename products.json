@@ -1,0 +1,35 @@
+[
+    {"product_name":"Karpuz kg",
+    "product_price":25.00,
+    "product_image":"/img/Karpuz.png"
+    },
+    {"product_name":"",
+    "product_price":0,
+    "product_image":""
+    },
+    {"product_name":"",
+    "product_price":0,
+    "product_image":""
+    },
+    {"product_name":"",
+    "product_price":0,
+    "product_image":""
+    },
+    {"product_name":"",
+    "product_price":0,
+    "product_image":""
+    },
+    {"product_name":"",
+    "product_price":0,
+    "product_image":""
+    },
+    {"product_name":"",
+    "product_price":0,
+    "product_image":""
+    },
+    {"product_name":"",
+    "product_price":0,
+    "product_image":""
+    }
+
+]

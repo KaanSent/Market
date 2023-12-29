@@ -1,0 +1,104 @@
+
+header {
+    background-color: #f8f9fa;
+    padding: 10px;
+}
+
+.my-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-img{
+    width: 100px;
+    border-radius: 10%;
+    margin-left: vw;
+}
+.banner{
+    width: 70%;
+    height: 20vh
+}
+.right-navi {
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+    margin-right: 1vw;
+    
+}
+.cart{
+    box-sizing: border-box;
+    padding-left:10px ;
+    background-color: #EEA200;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center; /* Align items horizontally in the center */
+    align-items: center; /* Align items vertically in the center */
+    flex-direction: row; /* Make items next to each other */
+}
+.cart:hover{
+    cursor: pointer;
+}
+.cart-font{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 4vw;
+    font-weight: bold;
+}
+.sale{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #EEA200;
+    padding-top: 1rem;
+}
+.sale-link{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #EEA200;
+    border-radius: 12%;
+    padding: 5px 10px;
+}
+.sale-link:hover{
+    text-decoration: none;
+    color: #ffffff;
+}
+input[type="search"] {
+    width: 200px;
+    padding: 5px;
+}
+input[type="search"]:hover {
+    border: 2px solid #EEA200;
+}
+input[type="search"]:focus {
+    border: 2px solid #EEA200;
+    outline: none;
+}
+.main-content {
+    display: flex;
+   width: 75vw;
+   margin: auto;
+}
+.btn-site{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #EEA200;
+    border-radius: 12%;
+    padding: 5px 10px;
+}
+.img-product{
+    width: 40%;
+    margin-right: 10px;
+}
+.itemside {
+    display: flex;
+    align-items: center; /* This will vertically center the figcaption if the image is taller */
+}
+.img-sm{
+    width: 105px;
+    height: auto;
+}
