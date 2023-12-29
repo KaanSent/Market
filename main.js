@@ -33,6 +33,28 @@ function eventListeners(){
             })
             .catch(error => console.error('Error:', error));
     });
+    addCartBtn.addEventListener('click', (event) => {
+        const productCard = event.target.parentElement.parentElement.parentElement;
+        const product = {
+            id: productCard.id,
+            name: productCard.querySelector('.product-name').textContent,
+            price: productCard.querySelector('.product-price').textContent,
+            img: productCard.querySelector('.product-image img').src,
+        }
+      
+        fetch('/add-to-cart', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(product),
+        })
+        .then(response => response.text())
+        .then(data => console.log(data))
+        .catch((error) => {
+          console.error('Error:', error);
+        });
+      });
 }
 
 

@@ -1,4 +1,4 @@
-export class UI {
+ class UI {
 
 displayMessage(){
     const body = document.querySelector('body');

@@ -2,77 +2,77 @@
     {"productId":0,
     "productName":"Bingo Oksijen Çamaşır Suyu Limon Kokulu 3.240 Ml",
     "productPrice":101.50,
-    "productImg":"/images/Bingo Oksijen Çamaşır Suyu Okapliptüs 3.240 Ml.png"
+    "productImg":"/img/Bingo.png"
     },
     {"productId":1,
     "productName":"Dana Kuşbaşı 400 Gr",
     "productPrice":125,
-    "productImg":"/images/Dana-kuşbaşı.png"
+    "productImg":"/img/Dana-kuşbaşı.png"
     },
     {"productId":2,
     "productName":"Didi Bergamot Aromalı Soğuk Çay 2,5 L",
     "productPrice":27,
-    "productImg":"/images/Didi Bergamot Aromalı Soğuk Çay 2,5 L.png"
+    "productImg":"/img/Didi.png"
     },
     {"productId":3,
     "productName":"Doğadan Ihlamurlu Karışık Bitki Çayı 18'li 29G",
     "productPrice":47.25,
-    "productImg":"/images/Doğadan Ihlamurlu Karışık Bitki Çayı 18'li 29G.png"
+    "productImg":"/img/Doğadan.png"
     },
     {"productId":4,
     "productName":"Domates kg",
     "productPrice":19.20,
-    "productImg":"/images/domates.png"
+    "productImg":"/img/domates.png"
     },
     {"productId":5,
     "productName":"Doritos Taco Mısır Cipsi Süper Boy 121 gr",
     "productPrice":34.99,
-    "productImg":"/images/Doritos Taco Mısır Cipsi Süper Boy 121 gr.png"
+    "productImg":"/img/Doritos.png"
     },
     {"productId":6,
     "productName":"Dove Care Rituals Limited Edition Sıvı Sabun 450 Ml",
     "productPrice":138.50,
-    "productImg":"/images/Dove Care Rituals Limited Edition Sıvı Sabun 450 Ml.png"
+    "productImg":"/img/Dove.png"
     },
     {"productId":7,
     "productName":"Like Me 10 Metre Rulo Ağda Bezi",
     "productPrice":68.45,
-    "productImg":"/images/Like Me 10 Metre Rulo Ağda Bezi.png"
+    "productImg":"/img/Like Me 10 Metre Rulo Ağda Bezi.png"
     },
     {"productId":8,
     "productName":"Guseppe pizza 2'li 105gr",
     "productPrice":54.75,
-    "productImg":"/images/guseppe.png"
+    "productImg":"/img/guseppe.png"
     },
     {"productId":9,
     "productName":"Karpuz kg",
     "productPrice":20,
-    "productImg":"/images/Karpuz.png"
+    "productImg":"/img/Karpuz.png"
     },
     {"productId":10,
     "productName":"Migros Ultra Çamaşır Suyu Fresh 1000 Ml",
     "productPrice":113.15,
-    "productImg":"/images/Migros Ultra Çamaşır Suyu Fresh 1000 Ml.png"
+    "productImg":"/img/Migros.png"
     },
     {"productId":11,
     "productName":"Joysıdea 16 İnç Ayaklı Vantilatör",
     "productPrice":784.85,
-    "productImg":"/images/Joysıdea 16 İnç Ayaklı Vantilatör.png"
+    "productImg":"/img/Joysıdea.png"
     },
     {"productId":12,
     "productName":"Snopy Rampage Sn-r2 Oyuncu Mikrofonlu Kulaklık",
     "productPrice":250.75,
-    "productImg":"/images/Snopy Rampage Sn-r2 Oyuncu Mikrofonlu Kulaklık.png"
+    "productImg":"/img/Snopy.png"
     },
     {"productId":13,
     "productName":"Dana sucuk 250gr",
     "productPrice":87.50,
-    "productImg":"/images/sucuk.png"
+    "productImg":"/img/sucuk.png"
     },
     {"productId":14,
     "productName":"Ülker Ekstra Bitter Çikolatalı Gofret 45 G",
     "productPrice":23.75,
-    "productImg":"/images/Ülker Ekstra Bitter Çikolatalı Gofret 45 G.png"
+    "productImg":"/img/Bitter.png"
     }
     
 
