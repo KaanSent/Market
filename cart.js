@@ -38,9 +38,42 @@ if(container){
                     <td>
                         <div class="price-wrap"> <var class="price">₺${product.productPrice}</var></div>
                     </td>
-                    <td class="text-right d-none d-md-block"> <a data-original-title="Save to Wishlist" title="" href="" class="btn btn-light" data-toggle="tooltip" data-abc="true"> <i class="fa fa-heart"></i></a> <a href="" class="btn btn-site" data-abc="true"> Kaldır</a> </td>
+                    <td class="text-right d-none d-md-block"> <a data-original-title="Save to Wishlist" title="" href="" class="btn btn-light" data-toggle="tooltip" data-abc="true"> <i class="fa fa-heart"></i></a> <a id= delete-${product.productId} href="" class="btn btn-site" data-abc="true"> Kaldır</a> </td>
                 </tr>`
     container.insertAdjacentHTML("beforeend",item)
+    const deleteBtn = document.getElementById(`delete-${product.productId}`);
+    deleteBtn.addEventListener("click",(event)=> {
+        event.preventDefault();
+        deleteItem(product.productId)
+        console.log(event);
+    })
 }
 })
+
+function deleteItem(itemId) {
+    // Find the index of the product with the given itemId
+    const index = filtredProducts.findIndex(product => product.productId === itemId);
+
+    // If the product was found, remove it from the array
+    if (index !== -1) {
+        filtredProducts.splice(index, 1);
+    }
+
+    // Update the UI
+    const itemElement = document.getElementById(`delete-${itemId}`).parentNode.parentNode;
+    itemElement.parentNode.removeChild(itemElement);
+    //deleting from localstorage not working
+    let storedItems = JSON.parse(localStorage.getItem('addedItems'));
+    storedItems = storedItems.filter(item => item.productId !== itemId);
+    localStorage.setItem('addedItems', JSON.stringify(storedItems));
+}
                                    
+// Calculate total price
+let totalPrice = 0;
+filtredProducts.forEach(product => {
+    totalPrice += product.productPrice;
+    console.log(totalPrice);
+});
+
+// Update total price in HTML
+document.getElementById('total').textContent = '₺' + totalPrice.toFixed(2);
