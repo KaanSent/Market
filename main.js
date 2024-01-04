@@ -17,7 +17,7 @@ populateMapWithStorage();
                             <img src="${product.productImg}" alt="${product.productName}" />
                         </div>
                         <div class="product-info">
-                            <h2 class="product-name">${product.productName}</h2>
+                            <h2 id ="${product.category}"class="product-name">${product.productName}</h2>
                             <div class="product-price-cart">
                                 <p class="product-price">Fiyat: ₺${product.productPrice}</p>
                                 <button id=add-to-cart-${product.productId} class="add-to-cart">Sepete ekle</button>
@@ -100,5 +100,32 @@ document.addEventListener('DOMContentLoaded', () => {
       });
   });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const categoryCards = document.querySelectorAll('.category-card');
+
+  categoryCards.forEach((categoryCard) => {
+    categoryCard.addEventListener('click', () => {
+      const productCards = document.querySelectorAll('.product-card');
+      const category = categoryCard.innerText;
+      console.log(category);
+
+      productCards.forEach((productCard) => {
+        const productCategory = productCard.querySelector('.product-name').id;
+        console.log(productCategory);
+
+        if (productCategory === category) {
+          productCard.style.display = 'block';
+        } else {
+          productCard.style.display = 'none';
+        }
+      });
+    });
+  });
+
+
+
+});
+
 
 
