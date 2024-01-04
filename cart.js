@@ -89,6 +89,7 @@ filtredProducts.forEach(product => {
 // Update total price in HTML
 document.getElementById('total').textContent = '₺' + totalPrice.toFixed(2);
 
+
     
     
 
