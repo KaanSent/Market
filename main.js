@@ -28,6 +28,9 @@ populateMapWithStorage();
                     const addBtn = document.getElementById(`add-to-cart-${product.productId}`)
                     addBtn.addEventListener("click",(event)=> {
                         addItemToCart(productCard.id)
+                        const priceCartDiv = productCard.querySelector('.product-info');
+                        displayMsg(priceCartDiv);
+                        
                     })
 
                     
@@ -62,4 +65,15 @@ populateMapWithStorage();
     )
   );
 }  
+
+function displayMsg(parent) {
+  const div = document.createElement('div');
+  div.className = 'alert alert-success';
+  div.textContent = 'Ürününüz başarıyla sepete eklendi!';
+  parent.appendChild(div);
+  setTimeout(() => {
+      div.remove();
+  }, 2000);
+}
+
 

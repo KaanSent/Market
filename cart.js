@@ -64,6 +64,7 @@ function deleteItem(itemId) {
     itemElement.parentNode.removeChild(itemElement);
     //deleting from localstorage not working
     let storedItems = JSON.parse(localStorage.getItem('addedItems'));
+    console.log(storedItems);
     storedItems = storedItems.filter(item => item.productId !== itemId);
     localStorage.setItem('addedItems', JSON.stringify(storedItems));
 }
@@ -72,8 +73,8 @@ function deleteItem(itemId) {
 let totalPrice = 0;
 filtredProducts.forEach(product => {
     totalPrice += product.productPrice;
-    console.log(totalPrice);
 });
 
 // Update total price in HTML
 document.getElementById('total').textContent = '₺' + totalPrice.toFixed(2);
+
