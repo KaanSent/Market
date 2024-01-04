@@ -95,6 +95,7 @@ input[type="search"]:focus {
     background-color: #ffffff;
     color: #EEA200;
     padding: 12px 5px;
+    cursor: pointer;
 }
 .category-card {
     width: 100%;
@@ -116,7 +117,6 @@ input[type="search"]:focus {
     padding: 10px;
     margin-bottom: 20px;
     box-sizing: border-box; /* This ensures that the padding and border are included in the element's total width and height */
-    
 }
 
 .prodcut-info{

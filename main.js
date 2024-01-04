@@ -76,4 +76,29 @@ function displayMsg(parent) {
   }, 2000);
 }
 
+document.addEventListener('DOMContentLoaded', () => {
+  const searchInput = document.getElementById('search-input');
+  
+
+  searchInput.addEventListener('input', (event) => {
+      const productCards = document.querySelectorAll('.product-card');
+      const searchTerm = event.target.value.toLowerCase();
+      console.log(productCards);
+
+      
+
+      productCards.forEach((productCard) => {
+        
+          const productName = productCard.querySelector('.product-name').textContent.toLowerCase();
+          console.log(productName);
+
+          if (productName.includes(searchTerm)) {
+              productCard.style.display = 'block';
+          } else {
+              productCard.style.display = 'none';
+          }
+      });
+  });
+});
+
 
