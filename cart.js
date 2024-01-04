@@ -47,6 +47,17 @@ if(container){
         deleteItem(product.productId)
         console.log(event);
     })
+    document.addEventListener('click', (event) => {
+        let totalPrice = 0;
+        console.log(event.target)
+        const products = document.querySelectorAll('.price');
+        products.forEach(product => {
+            totalPrice += parseFloat(product.textContent.substring(1));
+            
+            document.getElementById('total').textContent = '₺' + totalPrice.toFixed(2);
+        }); 
+    
+        });
 }
 })
 
@@ -77,4 +88,9 @@ filtredProducts.forEach(product => {
 
 // Update total price in HTML
 document.getElementById('total').textContent = '₺' + totalPrice.toFixed(2);
+
+    
+    
+
+
 
