@@ -62,22 +62,23 @@ if(container){
 })
 
 function deleteItem(itemId) {
-    // Find the index of the product with the given itemId
-    const index = filtredProducts.findIndex(product => product.productId === itemId);
+    // Retrieve the addedItems from the local storage
+    const addedItems = JSON.parse(localStorage.getItem('addedItems')) || [];
 
-    // If the product was found, remove it from the array
+    // Find the index of the item with the given itemId in the addedItems array
+    const index = addedItems.findIndex(item => item[0] === itemId.toString());
+
+    // If the item was found, remove it from the addedItems array
     if (index !== -1) {
-        filtredProducts.splice(index, 1);
+        addedItems.splice(index, 1);
     }
+
+    // Store the updated addedItems back to the local storage
+    localStorage.setItem('addedItems', JSON.stringify(addedItems));
 
     // Update the UI
     const itemElement = document.getElementById(`delete-${itemId}`).parentNode.parentNode;
     itemElement.parentNode.removeChild(itemElement);
-    //deleting from localstorage not working
-    let storedItems = JSON.parse(localStorage.getItem('addedItems'));
-    console.log(storedItems);
-    storedItems = storedItems.filter(item => item.productId !== itemId);
-    localStorage.setItem('addedItems', JSON.stringify(storedItems));
 }
                                    
 // Calculate total price
