@@ -49,7 +49,7 @@ if(container){
     })
     document.addEventListener('click', (event) => {
         let totalPrice = 0;
-        console.log(event.target)
+        
         const products = document.querySelectorAll('.price');
         products.forEach(product => {
             totalPrice += parseFloat(product.textContent.substring(1));
